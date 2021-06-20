@@ -1,0 +1,62 @@
+theme = "nord-dark"
+icons = "awesome"
+
+# Memory
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{mem_total_used_percents}"
+format_swap = "{swap_used_percents}"
+
+# CPU
+[[block]]
+block = "cpu"
+interval = 2
+format = "{barchart} {utilization} {frequency}"
+
+[[block]]
+block = "load"
+interval = 2
+format = "{1m}"
+
+# Net
+[[block]]
+block = "net"
+format = "{ssid} {signal_strength}"
+interval = 5
+
+# Sound
+[[block]]
+block = "sound"
+
+# Bluetooth
+[[block]]
+block = "bluetooth"
+mac = "60:AB:D2:3B:38:E5"
+format = "Ninja"
+format_unavailable = "Ninja X"
+# hide_disconnected = true
+
+# Backlight
+[[block]]
+block = "backlight"
+invert_icons = true
+
+# Battery
+[[block]]
+block = "battery"
+interval = 60
+format = "{percentage}"
+
+# Notify
+[[block]]
+block = "notify"
+
+[[block]]
+block = "watson"
+
+# Date time
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d.%m.%Y %R"
