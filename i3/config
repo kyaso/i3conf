@@ -46,7 +46,9 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+set $term xfce4-terminal
+bindsym $mod+Return exec $term
+bindsym $mod+t exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
