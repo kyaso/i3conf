@@ -310,3 +310,7 @@ mode "$mode_system" {
 ######################### MISC ###################################
 ### Assign Zettlr to workspace 2
 assign [class="Zettlr"] number 2
+
+### Disable mouse hover focus
+focus_follows_mouse no
+##################################################################
