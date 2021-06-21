@@ -206,7 +206,7 @@ bindsym $mod+Shift+s exec gnome-screenshot -i
 
 # Lock screen
 set $Locker i3lock -c 3c4654 && sleep 1
-bindsym $mod+Shift+x exec $Locker
+bindsym Control+$mod_alt+l exec $Locker
 
 # Middle mouse to kill window
 bindsym --release button2 kill
