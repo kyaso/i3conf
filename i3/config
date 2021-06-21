@@ -239,4 +239,34 @@ exec_always feh --bg-scale ~/Pictures/Firefox_wallpaper.png
 ### Lauch Picom
 exec_always picom --inactive-opacity=1.0 --menu-opacity=1.0
 ##################################################################
+
+
+########################## AUTOSTARTS ############################
+# Blueman
+exec --no-startup-id blueman-applet
+
+# Volume control
+exec --no-startup-id pa-applet
+
+# Pamac tray
+exec --no-startup-id pamac-tray
+
+# Authentication daemon to allow password pop-ups (eg, for gparted)
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# xfce4-power-manager
+exec --no-startup-id xfce4-power-manager
+
+# Redshift
+exec --no-startup-id redshift-gtk -l 48.1:11.6
+
+# Firefox
+exec --no-startup-id i3-msg "workspace $ws1; exec firefox"
+
+# Zettlr
+exec --no-startup-id i3-msg "workspace $ws2; exec $term; workspace $ws1"
+
+# Terminal on laptop screen (workspace 5)
+exec --no-startup-id i3-msg "workspace $ws5; exec $term; workspace $ws1"
+##################################################################
 }
