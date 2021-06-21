@@ -195,4 +195,30 @@ bar {
         status_command i3status-rs
         tray_output primary
 }
+
+
+######################### CUSTOM KEYBINDINGS #####################
+# Open file explorer
+bindsym $mod+Shift+f exec xdg-open ~
+
+# Open screenshot tool
+bindsym $mod+Shift+s exec gnome-screenshot -i
+
+# Lock screen
+set $Locker i3lock -c 3c4654 && sleep 1
+bindsym $mod+Shift+x exec $Locker
+
+# Middle mouse to kill window
+bindsym --release button2 kill
+
+# Cycle workspaces
+bindsym $mod+o workspace next
+bindsym $mod+i workspace prev
+
+# Kind of Alt-TAB
+bindsym --release $mod_alt+Tab workspace back_and_forth
+
+# Power menu (lock, shutdown, reboot...)
+bindsym Control+$mod_alt+Delete mode "$mode_system"
+##################################################################
 }
