@@ -58,5 +58,5 @@ block = "watson"
 # Date time
 [[block]]
 block = "time"
-interval = 60
-format = "%a %d.%m.%Y %R"
+interval = 1
+format = "%a %d.%m.%Y %H:%M:%S"
