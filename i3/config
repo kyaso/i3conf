@@ -221,4 +221,22 @@ bindsym --release $mod_alt+Tab workspace back_and_forth
 # Power menu (lock, shutdown, reboot...)
 bindsym Control+$mod_alt+Delete mode "$mode_system"
 ##################################################################
+
+
+########################## APPEARANCE ############################
+# Window title alignment
+title_align center
+
+# Hide edge borders
+hide_edge_borders smart
+
+# Auto switch to previous workspace
+workspace_auto_back_and_forth yes
+
+### Wallpaper
+exec_always feh --bg-scale ~/Pictures/Firefox_wallpaper.png
+
+### Lauch Picom
+exec_always picom --inactive-opacity=1.0 --menu-opacity=1.0
+##################################################################
 }
