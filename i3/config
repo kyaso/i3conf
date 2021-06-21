@@ -305,3 +305,8 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 ##################################################################
+
+
+######################### MISC ###################################
+### Assign Zettlr to workspace 2
+assign [class="Zettlr"] number 2
