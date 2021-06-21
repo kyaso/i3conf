@@ -269,4 +269,22 @@ exec --no-startup-id i3-msg "workspace $ws2; exec $term; workspace $ws1"
 # Terminal on laptop screen (workspace 5)
 exec --no-startup-id i3-msg "workspace $ws5; exec $term; workspace $ws1"
 ##################################################################
+
+
+
+###################### DISPLAY SETTINGS ##########################
+# Dual monitors
+exec_always ~/i3conf/screenlayouts/home_otn.sh
+
+# Assign workspaces to displays
+workspace $ws1 output DisplayPort-0
+workspace $ws2 output DisplayPort-0
+workspace $ws3 output DisplayPort-0
+workspace $ws4 output DisplayPort-0
+
+# Floating for certain windows
+for_window [class="blueman-manager"] floating enable # TODO
+
+
+##################################################################
 }
