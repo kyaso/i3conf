@@ -238,6 +238,12 @@ exec_always feh --bg-scale ~/Pictures/Firefox_wallpaper.png
 
 ### Lauch Picom
 exec_always picom --inactive-opacity=1.0 --menu-opacity=1.0
+############################ GAPS ################################
+# You can also use any non-zero value if you'd like to have a border
+for_window [class=".*"] border pixel 2
+
+gaps inner 15
+
 ##################################################################
 
 
