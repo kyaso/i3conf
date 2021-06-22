@@ -260,6 +260,9 @@ exec --no-startup-id xfce4-power-manager
 # Redshift
 exec --no-startup-id redshift-gtk -l 48.1:11.6
 
+# Onboard
+exec --no-startup-id onboard
+
 # Firefox
 exec --no-startup-id i3-msg "workspace $ws1; exec firefox"
 
