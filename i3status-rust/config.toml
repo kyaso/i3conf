@@ -59,4 +59,5 @@ block = "watson"
 [[block]]
 block = "time"
 interval = 1
-format = "%a %d.%m.%Y %H:%M:%S"
+format = "%a %b %d, <b>%H:%M:%S</b>"
+on_click = "gsimplecal"
