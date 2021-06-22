@@ -269,6 +269,9 @@ exec --no-startup-id i3-msg "workspace $ws1; exec firefox"
 # Zettlr
 exec --no-startup-id i3-msg "workspace $ws2; exec $term; workspace $ws1"
 
+# Terminal
+exec --no-startup-id i3-msg "workspace $ws3; exec $term; workspace $ws1"
+
 # Terminal on laptop screen (workspace 5)
 exec --no-startup-id i3-msg "workspace $ws5; exec $term; workspace $ws1"
 ##################################################################
