@@ -204,6 +204,10 @@ bar {
                 focused_workspace  #43C2DA #073254 #bff5ff
                 inactive_workspace #091a29 #0E2941 #189CB4
         }
+
+        ### Mouse binds
+        # Kill focused window
+        bindsym --release button2 kill
 }
 ##################################################################
 
