@@ -29,6 +29,13 @@ interval = 5
 [[block]]
 block = "sound"
 
+# Music
+[[block]]
+block = "music"
+buttons = ["play"]
+hide_when_empty = true
+
+
 # Bluetooth
 [[block]]
 block = "bluetooth"
