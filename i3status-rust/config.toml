@@ -22,7 +22,7 @@ format = "{1m}"
 # Net
 [[block]]
 block = "net"
-format = "{ssid} {signal_strength}"
+format = "{signal_strength}"
 interval = 5
 
 # Sound
