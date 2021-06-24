@@ -15,6 +15,12 @@ interval = 2
 format = "{barchart} {utilization} {frequency}"
 
 [[block]]
+block = "temperature"
+collapsed = false
+chip = "k10temp-pci-00c3"
+format = "{average}"
+
+[[block]]
 block = "load"
 interval = 2
 format = "{1m}"
