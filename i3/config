@@ -271,6 +271,23 @@ client.unfocused        #24515e #0E2941 #189CB4 #00ff00   #24515e
 ##################################################################
 
 
+###################### DISPLAY SETTINGS ##########################
+# Dual monitors
+exec_always $HOME/i3conf/screenlayouts/home_otn.sh
+
+# Assign workspaces to displays
+workspace $ws1 output DisplayPort-0
+workspace $ws2 output DisplayPort-0
+workspace $ws3 output DisplayPort-0
+workspace $ws4 output DisplayPort-0
+
+# Floating for certain windows
+for_window [class="Blueman-manager"] floating enable
+
+
+##################################################################
+
+
 ############################ GAPS ################################
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 2
@@ -305,6 +322,9 @@ exec --no-startup-id redshift-gtk -l 48.1:11.6
 # Onboard
 exec --no-startup-id onboard
 
+# Firefox
+exec --no-startup-id i3-msg "workspace $ws1; exec firefox"
+
 # Zettlr
 exec --no-startup-id i3-msg "workspace $ws2; exec $term; workspace $ws1"
 
@@ -313,26 +333,6 @@ exec --no-startup-id i3-msg "workspace $ws3; exec $term; workspace $ws1"
 
 # Terminal on laptop screen (workspace 5)
 exec --no-startup-id i3-msg "workspace $ws5; exec $term; workspace $ws1"
-
-# Firefox
-exec --no-startup-id i3-msg "workspace $ws1; exec firefox"
-##################################################################
-
-
-
-###################### DISPLAY SETTINGS ##########################
-# Dual monitors
-exec_always $HOME/i3conf/screenlayouts/home_otn.sh
-
-# Assign workspaces to displays
-workspace $ws1 output DisplayPort-0
-workspace $ws2 output DisplayPort-0
-workspace $ws3 output DisplayPort-0
-workspace $ws4 output DisplayPort-0
-
-# Floating for certain windows
-for_window [class="Blueman-manager"] floating enable
-
 
 ##################################################################
 
