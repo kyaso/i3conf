@@ -1,4 +1,4 @@
-theme = "nord-dark"
+theme = "solarized-dark"
 icons = "awesome"
 
 # Memory
@@ -13,6 +13,7 @@ format_swap = "{swap_used_percents}"
 block = "cpu"
 interval = 2
 format = "{barchart} {utilization} {frequency}"
+on_click = "gnome-system-monitor"
 
 [[block]]
 block = "temperature"
