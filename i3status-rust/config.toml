@@ -31,16 +31,11 @@ block = "net"
 format = "{signal_strength}"
 interval = 5
 
-# Sound
-[[block]]
-block = "sound"
-
 # Music
 [[block]]
 block = "music"
 buttons = ["play"]
 hide_when_empty = true
-
 
 # Bluetooth
 [[block]]
@@ -50,10 +45,9 @@ format = "Ninja"
 format_unavailable = "Ninja X"
 # hide_disconnected = true
 
-# Backlight
+# Sound
 [[block]]
-block = "backlight"
-invert_icons = true
+block = "sound"
 
 # Battery
 [[block]]
@@ -61,6 +55,11 @@ block = "battery"
 interval = 60
 format = "{percentage}"
 on_click = "$HOME/.config/rofi/applets/menu/powermenu.sh"
+
+# Backlight
+[[block]]
+block = "backlight"
+invert_icons = true
 
 # Notify
 [[block]]
