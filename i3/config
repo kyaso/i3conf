@@ -249,6 +249,9 @@ bindsym --release $mod_alt+Tab workspace back_and_forth
 
 # Power menu (lock, shutdown, reboot...)
 bindsym Control+$mod_alt+Delete mode "$mode_system"
+
+# Show scratchpad
+bindsym $mod+minus scratchpad show
 ##################################################################
 
 
