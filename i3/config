@@ -246,6 +246,7 @@ bindsym $mod+i workspace prev
 
 # Kind of Alt-TAB
 bindsym --release $mod_alt+Tab workspace back_and_forth
+bindsym --release $mod+Tab workspace back_and_forth
 
 # Power menu (lock, shutdown, reboot...)
 bindsym Control+$mod_alt+Delete mode "$mode_system"
