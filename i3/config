@@ -335,7 +335,7 @@ exec --no-startup-id onboard
 exec --no-startup-id i3-msg "workspace $ws1; exec sleep 0.2 && firefox"
 
 # Zettlr
-exec --no-startup-id i3-msg "workspace $ws2; exec $term; workspace $ws1"
+exec --no-startup-id i3-msg "workspace $ws2; exec sleep 0.2 && $term && sleep 0.5 && xdotool key 'y+KP_Enter' && i3-msg 'move scratchpad'"
 
 # Terminal
 exec --no-startup-id i3-msg "workspace $ws3; exec sleep 0.2 && $term; workspace $ws1"
