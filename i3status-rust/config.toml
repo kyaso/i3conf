@@ -15,11 +15,11 @@ interval = 2
 format = "{barchart} {utilization} {frequency}"
 on_click = "gnome-system-monitor"
 
-[[block]]
-block = "temperature"
-collapsed = false
-chip = "k10temp-pci-00c3"
-format = "{average}"
+#[[block]]
+#block = "temperature"
+#collapsed = false
+#chip = "k10temp-pci-00c3"
+#format = "{average}"
 
 [[block]]
 block = "load"
@@ -63,11 +63,11 @@ block = "backlight"
 invert_icons = true
 
 # Notify
-[[block]]
-block = "notify"
+#[[block]]
+#block = "notify"
 
-[[block]]
-block = "watson"
+#[[block]]
+#block = "watson"
 
 # Date time
 [[block]]
