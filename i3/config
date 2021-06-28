@@ -214,7 +214,7 @@ bar {
         position top
 
         colors {
-                background #0E2941
+                background #222222
 
                 # class            border  backgr. text
                 focused_workspace  #43C2DA #073254 #bff5ff
@@ -305,8 +305,8 @@ for_window [class="Blueman-manager"] floating enable
 ############################ GAPS ################################
 # You can also use any non-zero value if you'd like to have a border
 #for_window [class=".*"] border pixel 2
-default_border pixel 1
-default_floating_border pixel 1
+#default_border pixel 1
+#default_floating_border pixel 1
 
 #gaps inner 15
 
@@ -325,7 +325,7 @@ exec --no-startup-id blueman-applet
 #exec --no-startup-id pamac-tray
 
 # Authentication daemon to allow password pop-ups (eg, for gparted)
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # xfce4-power-manager
 exec --no-startup-id xfce4-power-manager
@@ -346,8 +346,6 @@ exec --no-startup-id i3-msg "workspace $ws_browser; exec sleep 0.2 && firefox"
 # Terminal
 exec --no-startup-id i3-msg "workspace $ws_term; exec sleep 0.2 && $term"
 
-# VSCode
-exec --no-startup-id i3-msg "workspace $ws_code; exec sleep 0.2 && code"
 
 # Terminal on laptop screen (workspace 5)
 #exec --no-startup-id i3-msg "workspace $ws5; exec sleep 0.2 && $term"
@@ -358,6 +356,9 @@ exec --no-startup-id i3-msg "workspace $ws_zettlr; exec sleep 0.2 && $term"
 
 # Teams
 exec --no-startup-id teams
+
+# VSCode
+exec --no-startup-id i3-msg "workspace $ws_code; exec sleep 0.2 && code"
 
 ##################################################################
 
