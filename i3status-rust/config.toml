@@ -1,6 +1,13 @@
 theme = "solarized-dark"
 icons = "awesome"
 
+# Toggle tiling/tabbed
+[[block]]
+block = "custom"
+cycle = ["echo  && i3-msg -q 'layout toggle split'", "echo  && i3-msg -q 'layout tabbed'"]
+interval = "once"
+#on_click = "<command>"
+
 # Memory
 [[block]]
 block = "memory"
