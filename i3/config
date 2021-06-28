@@ -16,8 +16,8 @@ set $mod_alt Mod1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # TODO
-#font pango:Noto Sans, Font Awesome 5 Brands Regular, Font Awesome 5 Free Solid, Font Awesome 5 Free Regular 11
-font pango:Noto Sans, FontAwesome
+font pango:Noto Sans, Font Awesome 5 Brands Regular, Font Awesome 5 Free Solid, Font Awesome 5 Free Regular 12
+#font pango:Noto Sans, FontAwesome
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -131,7 +131,7 @@ set $ws_code "3: "
 # Terminals
 set $ws_term "4: "
 # Teams
-set $ws_teams "5"
+set $ws_teams "5: "
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -208,7 +208,7 @@ bindsym $mod_alt+o resize grow width 10 px or 10 ppt
 bar {
         #status_command i3blocks
         # TODO
-        font pango:Font Awesome 5 Brands Regular, Font Awesome 5 Free Solid, Font Awesome 5 Free Regular, FiraCode Nerd Font Mono 11
+        font pango:Font Awesome 5 Brands Regular, Font Awesome 5 Free Solid, Font Awesome 5 Free Regular, FiraCode Nerd Font 12
         status_command i3status-rs
 #tray_output primary
         position top
