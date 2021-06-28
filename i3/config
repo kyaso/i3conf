@@ -317,7 +317,7 @@ exec --no-startup-id blueman-applet
 
 # Volume control
 # TODO
-exec --no-startup-id pa-applet
+#exec --no-startup-id pa-applet
 
 # Pamac tray
 #exec --no-startup-id pamac-tray
@@ -344,10 +344,15 @@ exec --no-startup-id i3-msg "workspace $ws_browser; exec sleep 0.2 && firefox"
 # Terminal
 exec --no-startup-id i3-msg "workspace $ws_term; exec sleep 0.2 && $term"
 
+# VSCode
+exec --no-startup-id i3-msg "workspace $ws_code; exec sleep 0.2 && code"
+
 # Terminal on laptop screen (workspace 5)
-exec --no-startup-id i3-msg "workspace $ws5; exec sleep 0.2 && $term"
+#exec --no-startup-id i3-msg "workspace $ws5; exec sleep 0.2 && $term"
+
 # Zettlr
 #exec --no-startup-id i3-msg "workspace $ws_zettlr; exec sleep 1 && $term && sleep 1 && xdotool key 'z+KP_Enter' && sleep 1 && i3-msg 'move scratchpad'"
+exec --no-startup-id i3-msg "workspace $ws_zettlr; exec sleep 0.2 && $term"
 
 # Teams
 exec --no-startup-id teams
