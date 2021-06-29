@@ -251,6 +251,9 @@ bindsym --release $mod+Tab workspace back_and_forth
 # Power menu (lock, shutdown, reboot...)
 bindsym Control+$mod_alt+Delete mode "$mode_system"
 
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
 # Show scratchpad
 bindsym $mod+minus scratchpad show
 
@@ -295,6 +298,7 @@ workspace $ws_term output DisplayPort-0
 
 # Floating for certain windows
 for_window [class="Blueman-manager"] floating enable
+for_window [class="Gnome-calculator"] floating enable
 
 
 ##################################################################
