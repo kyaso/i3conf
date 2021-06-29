@@ -257,6 +257,8 @@ bindsym Control+$mod_alt+Delete mode "$mode_system"
 
 # Show scratchpad
 bindsym $mod+minus scratchpad show
+
+bindsym Control+Shift+i exec ~/zettlr-sync/genid.sh 
 ##################################################################
 
 
