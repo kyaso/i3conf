@@ -1,6 +1,13 @@
 theme = "space-villain"
 icons = "awesome5"
 
+# Toggle floating
+[[block]]
+block = "custom"
+command = "echo "
+interval = "once"
+on_click = "i3-msg 'floating toggle'"
+
 # Toggle tiling/tabbed
 [[block]]
 block = "custom"
