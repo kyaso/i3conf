@@ -311,8 +311,8 @@ for_window [class="Gnome-calculator"] floating enable
 ############################ GAPS ################################
 # You can also use any non-zero value if you'd like to have a border
 #for_window [class=".*"] border pixel 2
-#default_border pixel 1
-#default_floating_border pixel 1
+default_border pixel 1
+default_floating_border pixel 1
 
 #gaps inner 15
 
