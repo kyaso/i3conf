@@ -324,8 +324,7 @@ for_window [class="Gnome-calculator"] floating enable
 exec --no-startup-id blueman-applet
 
 # Volume control
-# TODO
-#exec --no-startup-id pa-applet
+exec --no-startup-id volumeicon
 
 # Pamac tray
 #exec --no-startup-id pamac-tray
