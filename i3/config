@@ -106,7 +106,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space exec "~/i3conf/i3/scripts/toggle_float.sh"
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -349,6 +349,8 @@ for_window [class="Gnome-calculator"] floating enable
 ############################ GAPS ################################
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 2
+# Show title bar for floating windows. Also mark for toggle float script
+for_window [floating] border normal 2, mark --add f;
 
 gaps inner 15
 
