@@ -6,7 +6,7 @@ icons = "awesome5"
 block = "custom"
 command = "echo "
 interval = "once"
-on_click = "i3-msg 'floating toggle'"
+on_click = "~/i3conf/i3/scripts/toggle_float.sh"
 
 # Toggle tiling/tabbed
 [[block]]
