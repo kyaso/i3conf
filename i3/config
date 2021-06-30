@@ -290,6 +290,9 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 bindsym Control+Shift+i exec ~/zettlr-sync/genid.sh 
+
+# Firefox
+bindsym $mod+Shift+Return exec firefox
 ##################################################################
 
 
