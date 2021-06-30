@@ -231,7 +231,7 @@ bar {
         # Kill focused window
         bindsym --release button2 kill
         # Show Rofi
-        bindsym --release button3 exec --no-startup-id $rof
+        bindsym --release button3 exec --no-startup-id $rofi
 
         ################# COLOR THEME #######################
         # --- Nord
