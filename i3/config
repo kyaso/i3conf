@@ -210,7 +210,7 @@ bar {
         # TODO
         font pango:Font Awesome 5 Brands Regular, Font Awesome 5 Free Solid, Font Awesome 5 Free Regular, FiraCode Nerd Font 12
         status_command i3status-rs
-#tray_output primary
+        tray_output primary
         position top
 
         colors {
