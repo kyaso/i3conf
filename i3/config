@@ -210,7 +210,7 @@ bar {
         # TODO
         font pango:Font Awesome 5 Brands Regular, Font Awesome 5 Free Solid, Font Awesome 5 Free Regular, FiraCode Nerd Font 12
         status_command i3status-rs
-#tray_output primary
+        tray_output primary
         position top
 
         colors {
@@ -265,6 +265,17 @@ bindsym Control+Shift+i exec ~/zettlr-sync/genid.sh
 
 # Firefox
 bindsym $mod+Shift+Return exec firefox
+
+# Move workspaces between screens (outputs)
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+l move workspace to output right
+
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Down move workspace to output down
+bindsym $mod+Control+Up move workspace to output up
+bindsym $mod+Control+Right move workspace to output right
 ##################################################################
 
 
@@ -295,17 +306,18 @@ client.unfocused        #24515e #0E2941 #189CB4 #00ff00   #24515e
 
 ###################### DISPLAY SETTINGS ##########################
 # Dual monitors
-exec_always $HOME/i3conf/screenlayouts/mobile.sh
+#exec_always $HOME/i3conf/screenlayouts/mobile.sh
 
 # Assign workspaces to displays
-# workspace $ws_browser output DisplayPort-0
-# workspace $ws_zettlr output DisplayPort-0
-# workspace $ws_code output DisplayPort-0
-# workspace $ws_term output DisplayPort-0
+workspace $ws_browser output primary
+workspace $ws_zettlr output primary
+workspace $ws_code output primary
+workspace $ws_term output primary
 
 # Floating for certain windows
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Gnome-calculator"] floating enable
+for_window [class="System-config-printer.py"] floating enable
 
 
 ##################################################################
