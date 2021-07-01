@@ -306,7 +306,7 @@ client.unfocused        #24515e #0E2941 #189CB4 #00ff00   #24515e
 
 ###################### DISPLAY SETTINGS ##########################
 # Dual monitors
-exec_always $HOME/i3conf/screenlayouts/mobile.sh
+#exec_always $HOME/i3conf/screenlayouts/mobile.sh
 
 # Assign workspaces to displays
 workspace $ws_browser output primary
