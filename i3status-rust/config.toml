@@ -40,6 +40,13 @@ block = "load"
 interval = 2
 format = "{1m}"
 
+# VPN
+[[block]]
+block = "custom"
+command = "$HOME/i3conf/i3status-rust/vpn.sh"
+hide_when_empty = true
+interval = 10
+
 # Net
 [[block]]
 block = "net"
