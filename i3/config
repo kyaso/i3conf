@@ -378,6 +378,9 @@ exec --no-startup-id pa-applet
 # Pamac tray
 exec --no-startup-id pamac-tray
 
+# Dunst
+exec --no-startup-id dunst
+
 # Authentication daemon to allow password pop-ups (eg, for gparted)
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
