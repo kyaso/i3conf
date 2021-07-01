@@ -317,6 +317,7 @@ workspace $ws_term output primary
 # Floating for certain windows
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Gnome-calculator"] floating enable
+for_window [class="System-config-printer.py"] floating enable
 
 
 ##################################################################
