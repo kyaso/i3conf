@@ -309,10 +309,10 @@ client.unfocused        #24515e #0E2941 #189CB4 #00ff00   #24515e
 exec_always $HOME/i3conf/screenlayouts/mobile.sh
 
 # Assign workspaces to displays
-# workspace $ws_browser output DisplayPort-0
-# workspace $ws_zettlr output DisplayPort-0
-# workspace $ws_code output DisplayPort-0
-# workspace $ws_term output DisplayPort-0
+workspace $ws_browser output primary
+workspace $ws_zettlr output primary
+workspace $ws_code output primary
+workspace $ws_term output primary
 
 # Floating for certain windows
 for_window [class="Blueman-manager"] floating enable
