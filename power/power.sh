@@ -1,6 +1,7 @@
 #! /bin/bash
 
 confirm() {
+    sleep 0.2
     ans=$(echo -e "Yes\nNo" | rofi -width -40 -eh 2 -dmenu -no-custom -i -p "$1" -l 2)
     if [ $ans == "Yes" ]; then
         echo "YEEES"
