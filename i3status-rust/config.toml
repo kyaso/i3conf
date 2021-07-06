@@ -76,7 +76,8 @@ block = "sound"
 block = "battery"
 interval = 60
 format = "{percentage}"
-on_click = "$HOME/.config/rofi/applets/menu/powermenu.sh"
+#on_click = "$HOME/.config/rofi/applets/menu/powermenu.sh"
+on_click = "$HOME/i3conf/power/power.sh"
 
 # Backlight
 [[block]]
