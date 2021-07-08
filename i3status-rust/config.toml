@@ -1,5 +1,11 @@
-theme = "space-villain"
 icons = "awesome5"
+
+[theme]
+name = "solarized-dark"
+[theme.overrides]
+#idle_bg = "#073254"
+idle_bg = "#0E2941"
+idle_fg = "#43C2DA"
 
 # Toggle floating
 [[block]]
