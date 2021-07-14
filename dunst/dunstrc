@@ -158,6 +158,9 @@
     # Limit icons size.
     max_icon_size=32
 
+    # Corner radius
+    corner_radius = 10
+
 [shortcuts]
 
     # Shortcuts are specified as [modifier+][modifier+]...key
