@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 if [ $(pgrep openfortivpn) ]; then
-    echo " "
+    echo "{\"state\":\"Good\", \"text\":\" \"}"
 else
-    echo " "
+    echo "{\"text\":\" \"}"
 fi

@@ -6,6 +6,15 @@ name = "solarized-dark"
 #idle_bg = "#073254"
 idle_bg = "#0E2941"
 idle_fg = "#43C2DA"
+good_bg = "#23a861"
+info_bg = "#2382a8"
+
+# Run autorandr
+[[block]]
+block = "custom"
+command = "echo "
+interval = "once"
+on_click = "autorandr -c"
 
 # Toggle floating
 [[block]]
@@ -52,6 +61,7 @@ block = "custom"
 command = "$HOME/i3conf/i3status-rust/vpn.sh"
 hide_when_empty = true
 interval = 10
+json = true
 
 # Net
 [[block]]
