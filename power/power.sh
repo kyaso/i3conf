@@ -2,7 +2,8 @@
 
 confirm() {
     sleep 0.2
-    ans=$(echo -e "Yes\nNo" | rofi -width -40 -eh 2 -dmenu -no-custom -i -p "$1" -l 2)
+    # The me-select-entry and me-accept-entry options are need to allow single click selection
+    ans=$(echo -e "Yes\nNo" | rofi -me-select-entry '' -me-accept-entry 'MousePrimary' -width -40 -eh 2 -dmenu -no-custom -i -p "$1" -l 2)
     if [ $ans == "Yes" ]; then
         echo "YEEES"
         $2
@@ -13,7 +14,7 @@ confirm() {
 
 options="Lock\nSuspend\nExit i3\nReboot\nShutdown"
 
-sel=$(echo -e $options | rofi -width -30 -eh 2 -dmenu -no-custom -i -p "Please select" -l 5)
+sel=$(echo -e $options | rofi -me-select-entry '' -me-accept-entry 'MousePrimary' -width -30 -eh 2 -dmenu -no-custom -i -p "Please select" -l 5)
 
 case "$sel" in
     Lock)           $HOME/i3conf/power/lock.sh     ;;
