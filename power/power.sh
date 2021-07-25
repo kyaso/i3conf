@@ -1,7 +1,7 @@
 #! /bin/bash
 
 confirm() {
-    sleep 0.2
+    sleep 0.05
     # The me-select-entry and me-accept-entry options are need to allow single click selection
     ans=$(echo -e "Yes\nNo" | rofi -me-select-entry '' -me-accept-entry 'MousePrimary' -width -40 -eh 2 -dmenu -no-custom -i -p "$1" -l 2)
     if [ $ans == "Yes" ]; then
