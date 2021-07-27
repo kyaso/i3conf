@@ -50,6 +50,7 @@ interval = 5
 [[block]]
 block = "music"
 buttons = ["play"]
+max_width = 10
 hide_when_empty = true
 
 # Bluetooth
