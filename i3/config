@@ -307,6 +307,9 @@ bindsym $mod+Control+Right move workspace to output right
 
 # Show Rofi window menu
 bindsym $mod+Shift+w exec "rofi -show window"
+
+# Open blueman
+bindsym $mod+Shift+b exec blueman-manager
 ##################################################################
 
 
