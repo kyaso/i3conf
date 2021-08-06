@@ -344,6 +344,9 @@ for_window [floating] border normal 2, mark --add f;
 
 
 ########################## AUTOSTARTS ############################
+# Autorandr
+exec --no-startup-id autorandr -c
+
 # Blueman
 exec --no-startup-id blueman-applet
 
