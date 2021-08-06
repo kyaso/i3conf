@@ -282,6 +282,9 @@ bindsym $mod+Shift+w exec "rofi -show window"
 
 # Open Blueman Manager
 bindsym $mod+Shift+b exec "blueman-manager"
+
+# Change window title
+bindsym $mod+Shift+t exec "~/i3conf/i3/scripts/change_window_title.sh"
 ##################################################################
 
 
