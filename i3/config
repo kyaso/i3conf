@@ -294,6 +294,9 @@ bindsym Control+Shift+i exec ~/zettlr-sync/genid.sh
 # Firefox
 bindsym $mod+Shift+Return exec firefox
 
+# Alacritty
+bindsym $mod+Control+Return exec alacritty
+
 # Move workspaces between screens (outputs)
 bindsym $mod+Control+h move workspace to output left
 bindsym $mod+Control+j move workspace to output down
