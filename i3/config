@@ -120,6 +120,8 @@ bindsym $mod+Shift+a focus child
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 
+# Note: When you change the names here, you also have to change them in scripts/autostart.sh
+
 # Firefox
 set $ws_browser "1: "
 # Zettlr
@@ -381,6 +383,9 @@ gaps inner 15
 
 
 ########################## AUTOSTARTS ############################
+
+# German keyboard layout
+exec --no-startup-id setxkbmap de
 # Blueman
 exec --no-startup-id blueman-applet
 
@@ -408,17 +413,8 @@ exec --no-startup-id redshift-gtk -l 48.1:11.6
 # Onboard
 exec --no-startup-id onboard
 
-# Firefox
-exec --no-startup-id i3-msg "workspace $ws_browser; exec sleep 0.2 && firefox"
-
-
-# Terminal
-exec --no-startup-id i3-msg "workspace $ws_term; exec sleep 0.2 && $term"
-
-# Terminal on laptop screen (workspace 5)
-exec --no-startup-id i3-msg "workspace $ws5; exec sleep 0.2 && $term"
-# Zettlr
-exec --no-startup-id i3-msg "workspace $ws_zettlr; exec sleep 1 && $term && sleep 1 && xdotool key 'z+KP_Enter' && sleep 1 && i3-msg 'move scratchpad'"
+# Open browser, terminal, zettlr...
+exec --no-startup-id $HOME/i3conf/i3/scripts/autostart.sh 
 
 ##################################################################
 
