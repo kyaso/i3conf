@@ -431,6 +431,9 @@ assign [class="Microsoft Teams - Preview"] number $ws_teams
 
 ### Disable mouse hover focus
 focus_follows_mouse no
+
+### Set german keyboard
+exec --no-startup-id setxkbmap de
 ##################################################################
 
 ### TODO ###
