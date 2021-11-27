@@ -386,6 +386,13 @@ gaps inner 15
 
 # German keyboard layout
 exec --no-startup-id setxkbmap de
+
+# Increase keyboard press rate
+exec --no-startup-id xset r rate 400 60
+
+# Autorandr
+exec --no-startup-id autorandr -c
+
 # Blueman
 exec --no-startup-id blueman-applet
 
