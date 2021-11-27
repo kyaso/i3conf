@@ -347,6 +347,9 @@ for_window [floating] border normal 2, mark --add f;
 
 
 ########################## AUTOSTARTS ############################
+# Increase keyboard press rate
+exec --no-startup-id xset r rate 400 60
+
 # Autorandr
 exec --no-startup-id autorandr -c
 
