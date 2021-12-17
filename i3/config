@@ -267,6 +267,9 @@ bindsym $mod+Shift+f exec xdg-open ~
 # Open screenshot tool
 bindsym $mod+Shift+s exec gnome-screenshot -i
 
+# Open calculator
+bindsym $mod+c exec gnome-calculator
+
 # Lock screen
 set $lock $HOME/i3conf/power/lock.sh
 bindsym Control+$mod_alt+l exec $lock
