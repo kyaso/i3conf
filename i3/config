@@ -390,6 +390,9 @@ gaps inner 15
 # German keyboard layout
 exec --no-startup-id setxkbmap de
 
+# Numlock on
+exec --no-startup-id numlockx on
+
 # Increase keyboard press rate
 exec --no-startup-id xset r rate 400 60
 
