@@ -394,7 +394,7 @@ exec --no-startup-id setxkbmap de
 exec --no-startup-id numlockx on
 
 # Increase keyboard press rate
-exec --no-startup-id xset r rate 400 60
+exec --no-startup-id xset r rate 300 30
 
 # Autorandr
 exec --no-startup-id autorandr -c
