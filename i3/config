@@ -460,6 +460,12 @@ assign [class="Zettlr"] number 2
 
 ### Disable mouse hover focus
 focus_follows_mouse no
+
+### Set default split direction
+default_orientation horizontal
+
+### Reduce mouse sense (Rapoo)
+exec --no-startup-id xinput set-prop 14 312 -1
 ##################################################################
 
 ### TODO ###
