@@ -442,7 +442,7 @@ exec --no-startup-id setxkbmap de
 default_orientation horizontal
 
 ### Reduce mouse sense (Rapoo)
-exec --no-startup-id xinput set-prop 14 312 -1
+exec --no-startup-id xinput set-prop 10 333 -1
 ##################################################################
 
 ### TODO ###
