@@ -15,6 +15,10 @@ if [ ! -e $THEME ]; then
 fi
 
 # Generate config
-cat $THEME > config
+echo "##################################################################" > config
+echo "### This config was generated using '$0 $1'" >> config
+echo "##################################################################" >> config
+echo "" >> config
+cat $THEME >> config
 cat config_base >> config
 
