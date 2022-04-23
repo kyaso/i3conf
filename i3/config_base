@@ -224,11 +224,11 @@ bar {
 		background $color0
                 statusline $color1
 
-                # class            border  backgr. text
-                focused_workspace  $color2  $color3
-                active_workspace   $color4  $color5
-                inactive_workspace $color6  $color7
-                urgent_workspace   $color8  $color9
+                # class            border   backgr.  text
+                focused_workspace  $color25 $color2  $color3
+                active_workspace   $color26 $color4  $color5
+                inactive_workspace $color27 $color6  $color7
+                urgent_workspace   $color28 $color8  $color9
 	}
 }
 ##################################################################
@@ -315,7 +315,7 @@ exec_always feh --bg-scale ~/Pictures/astronaut.jpg
 exec_always picom --config ~/i3conf/picom.conf --inactive-opacity=1.0 --menu-opacity=1.0
 
 ### Window Decoration Colors
-# class                 border  backgr. text    indicator child_border
+# class                 border    backgr.   text      indicator  child_border
 
 client.focused          $color10  $color11  $color12  $color13   $color14
 client.focused_inactive $color15  $color16  $color17  $color18   $color19
