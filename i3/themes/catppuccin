@@ -1,0 +1,77 @@
+########################## THEME ############################
+### Theme palette
+# flamingo      F2CDCD
+# mauve         DDB6F2
+# pink          F5C2E7
+# maroon        E8A2AF
+# red           F28FAD
+# peach         F8BD96
+# yellow        FAE3B0
+# green         ABE9B3
+# teal          B5E8E0
+# blue          96CDFB
+# sky           89DCEB
+# black0        161320
+# black1        1A1826
+# black2        1E1E2E
+# black3        302D41
+# black4        575268
+# gray0        6E6C7E
+# gray1        988BA2
+# gray2        C3BAC6
+# white         D9E0EE
+# lavender      C9CBFF
+# rosewater     F5E0DC
+
+### i3 color bindings
+set $color0 #1E1E2E
+set $color1 #00ff00
+set $color2 #575268
+set $color3 #F5C2E7
+set $color4 #575268
+set $color5 #F5C2E7
+set $color6 #1E1E2E
+set $color7 #D9E0EE
+set $color8 #F28FAD
+set $color9 #D9E0EE
+set $color10 #C9CBFF
+set $color11 #575268
+set $color12 #F5C2E7
+set $color13 #ff0000
+set $color14 #C9CBFF
+set $color15 #575268
+set $color16 #1E1E2E
+set $color17 #D9E0EE
+set $color18 #ff0000
+set $color19 #575268
+set $color20 #575268
+set $color21 #1E1E2E
+set $color22 #D9E0EE
+set $color23 #ff0000
+set $color24 #575268
+set $color25 #C9CBFF
+set $color26 #575268
+set $color27 #1E1E2E
+set $color28 #575268
+
+### Window Decoration Colors
+# class                   border    backgr.   text      indicator  child_border
+
+# client.focused          lavender  black4    pink      #ff0000    lavender
+# client.focused_inactive black4    black2    white     #ff0000    black4
+# client.unfocused        black4    black2    white     #ff0000    black4
+
+
+### Bar colors
+# colors {
+#         background black2
+#         statusline #00ff00
+
+#         # class            border   backgr.  text
+#         focused_workspace  lavender black4   pink
+#         active_workspace   black4   black4   pink
+#         inactive_workspace black2   black2   white
+#         urgent_workspace   black4   red      white
+# }
+
+##################################################################
