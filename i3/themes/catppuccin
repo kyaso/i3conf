@@ -26,10 +26,10 @@
 ### i3 color bindings
 set $color0 #1E1E2E
 set $color1 #00ff00
-set $color2 #575268
-set $color3 #F5E0DC
+set $color2 #161320
+set $color3 #D9E0EE
 set $color4 #575268
-set $color5 #F5E0DC
+set $color5 #D9E0EE
 set $color6 #1E1E2E
 set $color7 #D9E0EE
 set $color8 #F28FAD
@@ -68,8 +68,8 @@ set $color28 #575268
 #         statusline c1: #00ff00
 
 #         # class            border        backgr.      text
-#         focused_workspace  c25: blue     c2: black4   c3: pink
-#         active_workspace   c26: black4   c4: black4   c5: pink
+#         focused_workspace  c25: blue     c2: black0   c3: white
+#         active_workspace   c26: black4   c4: black4   c5: white
 #         inactive_workspace c27: black2   c6: black2   c7: white
 #         urgent_workspace   c28: black4   c8: red      c9: white
 # }
