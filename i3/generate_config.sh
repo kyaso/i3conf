@@ -1,12 +1,13 @@
 #!/usr/bin/bash
 
-if [ $# -ne 1 ]; then
-    echo "Usage: ./generate_config.sh THEME"
-    exit 0
-fi
-
+DEFAULT_THEME="catppuccin"
 THEME_DIR="./themes"
-THEME=$THEME_DIR/$1
+
+if [ $# -ne 1 ]; then
+    THEME=$THEME_DIR/$DEFAULT_THEME
+else
+    THEME=$THEME_DIR/$1
+fi
 
 # Check if selected theme exists
 if [ ! -e $THEME ]; then
