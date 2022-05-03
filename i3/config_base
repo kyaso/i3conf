@@ -51,9 +51,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 # decrease screen 
 floating_modifier $mod
 
 # start a terminal
-set $term alacritty
+set $term alacritty --working-directory `xcwd`
+set $term_float alacritty --class floating_term
 bindsym $mod+Return exec $term
-bindsym $mod+t exec $term
+bindsym $mod+t exec $term_float
 
 # kill focused window
 bindsym $mod+q kill
@@ -337,6 +338,7 @@ workspace $ws_term output DisplayPort-0
 # Floating for certain windows
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Gnome-calculator"] floating enable
+for_window [instance="floating_term"] floating enable
 
 
 ##################################################################
