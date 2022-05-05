@@ -1,6 +1,13 @@
 theme = "solarized-dark"
 icons = "awesome"
 
+# Blueman Manager
+[[block]]
+block = "custom"
+command = "echo "
+interval = "once"
+on_click = "blueman-manager"
+
 # Toggle floating
 [[block]]
 block = "custom"
